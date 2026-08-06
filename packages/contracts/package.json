@@ -7,16 +7,22 @@
     "compile": "hardhat compile",
     "test": "hardhat test",
     "test:coverage": "hardhat coverage",
+    "test:gas": "REPORT_GAS=true hardhat test",
     "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia",
     "deploy:base": "hardhat run scripts/deploy.ts --network base",
     "verify": "hardhat verify",
-    "typechain": "typechain --target ethers-v6 --out-dir typechain/ethers-v6 './artifacts/contracts/**/*.json'"
+    "typechain": "typechain --target ethers-v6 --out-dir typechain/ethers-v6 './artifacts/contracts/**/*.json'",
+    "lint": "solhint 'contracts/**/*.sol'",
+    "format": "prettier --write 'contracts/**/*.sol'"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.9.6",
     "ethers": "^6.11.0"
   },
   "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",
     "@nomicfoundation/hardhat-verify": "^2.0.0",
     "@typechain/ethers-v6": "^0.5.1",
@@ -25,7 +31,12 @@
     "chai": "^4.3.10",
     "dotenv": "^16.4.0",
     "hardhat": "^2.20.1",
+    "hardhat-contract-sizer": "^2.10.0",
     "hardhat-deploy": "^0.12.2",
+    "hardhat-gas-reporter": "^1.0.9",
+    "prettier": "^3.0.0",
+    "prettier-plugin-solidity": "^1.2.0",
+    "solhint": "^4.0.0",
     "solidity-coverage": "^0.8.5",
     "typechain": "^8.3.2",
     "typescript": "^5.3.3"

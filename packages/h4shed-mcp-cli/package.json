@@ -1,0 +1,21 @@
+{
+  "name": "@dshit/h4shed-mcp-cli",
+  "version": "1.0.0",
+  "description": "H4SH MCP CLI - Command-line interface for test and deployment orchestration",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "h4shed": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@dshit/h4shed-mcp-core": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "source": ["tokens/**/*.json"],
+  "platforms": {
+    "css": {
+      "transformGroup": "css",
+      "buildPath": "dist/",
+      "files": [
+        {
+          "destination": "variables.css",
+          "format": "css/variables",
+          "options": {
+            "outputReferences": true
+          }
+        }
+      ]
+    },
+    "json": {
+      "transformGroup": "js",
+      "buildPath": "dist/",
+      "files": [
+        {
+          "destination": "tokens.json",
+          "format": "json",
+          "options": {
+            "outputReferences": true
+          }
+        }
+      ]
+    },
+    "typescript": {
+      "transformGroup": "js",
+      "buildPath": "dist/",
+      "files": [
+        {
+          "destination": "tokens.ts",
+          "format": "typescript/module-declarations"
+        }
+      ]
+    },
+    "tailwind": {
+      "transformGroup": "js",
+      "buildPath": "dist/",
+      "files": [
+        {
+          "destination": "tailwind.config.js",
+          "format": "javascript/module"
+        }
+      ]
+    }
+  }
+}

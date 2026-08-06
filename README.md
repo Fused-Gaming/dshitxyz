@@ -1,8 +1,22 @@
-# dshit.xyz
+# dshit.xyz 🚀
 
 **The memecoin that doesn't pretend to be something it's not.**
 
 > I ain't shittin you when I tell you you're sitting on gold.
+
+---
+
+## 🚀 **H4SH Ecosystem - Advanced Testing & Deployment Infrastructure**
+
+This project is powered by the **H4SH MCP ecosystem**, providing enterprise-grade tooling for:
+- ✅ Multi-environment testing orchestration
+- ✅ Swarm-based agent coordination
+- ✅ Real-time deployment monitoring
+- ✅ Design system management
+- ✅ Smart contract tools
+- ✅ NFT generation engine
+
+**For detailed setup information, see [H4SHED_ECOSYSTEM_SETUP.md](./H4SHED_ECOSYSTEM_SETUP.md)**
 
 ---
 
@@ -77,20 +91,48 @@ This isn't a startup. This is a movement.
 
 ---
 
-## Getting Started
+## Quick Start
+
+### Installation & Development
 
 ```bash
 # Install dependencies
 pnpm install
 
-# Run dev server
+# Run all dev servers (web + api)
 pnpm dev
 
 # Run tests
 pnpm test
+pnpm test:e2e:headed
 
-# Build
+# Build all packages
 pnpm build
+
+# Type checking
+pnpm type-check
+```
+
+### Using H4SH Ecosystem Tools
+
+```bash
+# Run tests with h4shed
+h4shed test e2e dev
+h4shed test unit staging
+
+# Deploy with h4shed
+h4shed deploy web-prod prod
+h4shed deploy api-staging staging
+
+# Monitor system status
+h4shed status
+
+# View design tokens
+design-tokens colors
+design-tokens export json
+
+# Manage design system
+cd apps/web && pnpm storybook
 ```
 
 ---
@@ -132,9 +174,64 @@ Reference design prototype: [`shitcoin_protocol_v2_poopy.html`](./shitcoin_proto
 
 ---
 
+## 📦 Core Packages
+
+| Package | Purpose | Status |
+|---------|---------|--------|
+| **@dshit/h4shed-mcp-core** | Testing & deployment orchestration | ✅ Ready |
+| **@dshit/h4shed-mcp-cli** | Command-line interface | ✅ Ready |
+| **@dshit/h4shed-syncpulse-hub** | Multi-agent coordination hub | ✅ Ready |
+| **@dshit/design-tokens** | Unified design token library | ✅ Ready |
+| **@dshit/style-dictionary** | Token generation & management | ✅ Ready |
+| **@dshit/nft-generative-art** | NFT art generation engine | ✅ Ready |
+
+---
+
+## 🛠️ Development Tools
+
+### Testing Infrastructure
+- **Playwright E2E** - Browser automation tests
+- **Hardhat + Chai** - Smart contract testing
+- **Jest** - Unit testing (configured)
+- **H4SH Test Runner** - Multi-suite orchestration
+
+### Design System
+- **Storybook 8** - Component library documentation
+- **Style Dictionary** - Token generation (CSS, JSON, TypeScript, Tailwind)
+- **Design Tokens Skill** - CLI token management
+
+### Smart Contracts
+- **Hardhat Gas Reporter** - Gas optimization analysis
+- **Solhint** - Solidity linting
+- **Prettier** - Solidity code formatting
+
+---
+
+## 🤖 Swarm Architecture
+
+The project uses a hierarchical-mesh swarm topology with:
+- **3 Tester Agents** - Test execution specialists
+- **2 Deployer Agents** - Deployment specialists
+- **1 Validator Agent** - Quality assurance
+
+Agents automatically coordinate across dev/staging/prod environments.
+
+---
+
+## 📚 Documentation
+
+- **[H4SHED_ECOSYSTEM_SETUP.md](./H4SHED_ECOSYSTEM_SETUP.md)** - Complete ecosystem documentation
+- **[DESIGN_SYSTEM.md](./DESIGN_SYSTEM.md)** - Visual design system guide
+- **[ROADMAP.md](./ROADMAP.md)** - Development roadmap
+- **[CLAUDE.md](./CLAUDE.md)** - Claude Code project instructions
+
+---
+
 ## Contributing
 
 This project is built autonomously with human oversight at key milestones. See [ROADMAP.md](./ROADMAP.md) for the development plan.
+
+For detailed H4SH ecosystem information, see [H4SHED_ECOSYSTEM_SETUP.md](./H4SHED_ECOSYSTEM_SETUP.md).
 
 ---
 

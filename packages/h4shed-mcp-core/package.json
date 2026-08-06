@@ -1,0 +1,17 @@
+{
+  "name": "@dshit/h4shed-mcp-core",
+  "version": "1.0.0",
+  "description": "H4SH MCP Core - Testing and deployment orchestration framework",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

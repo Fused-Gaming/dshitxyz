@@ -3,6 +3,8 @@ import "@nomicfoundation/hardhat-toolbox";
 import "@nomicfoundation/hardhat-verify";
 import "hardhat-deploy";
 import "solidity-coverage";
+import "hardhat-gas-reporter";
+import "hardhat-contract-sizer";
 import * as dotenv from "dotenv";
 
 dotenv.config();
@@ -65,6 +67,20 @@ const config: HardhatUserConfig = {
   typechain: {
     outDir: "typechain",
     target: "ethers-v6",
+  },
+  gasReporter: {
+    enabled: process.env.REPORT_GAS ? true : false,
+    currency: "USD",
+    coinmarketcap: process.env.COINMARKETCAP_API_KEY,
+    outputFile: "gas-report.txt",
+    noColors: true,
+  },
+  contractSizer: {
+    runOnCompile: true,
+    disambiguatePaths: false,
+  },
+  mocha: {
+    timeout: 50000,
   },
 };
 

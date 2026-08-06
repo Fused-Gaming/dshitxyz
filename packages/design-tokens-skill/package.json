@@ -1,0 +1,27 @@
+{
+  "name": "@dshit/design-tokens-skill",
+  "version": "1.0.0",
+  "description": "Design tokens skill for unified token management and generation",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "design-tokens": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "dev": "tsc --watch",
+    "sync": "node dist/cli.js sync",
+    "validate": "node dist/cli.js validate",
+    "export": "node dist/cli.js export"
+  },
+  "dependencies": {
+    "@dshit/design-tokens": "workspace:*",
+    "@dshit/style-dictionary": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.3"
+  }
+}
