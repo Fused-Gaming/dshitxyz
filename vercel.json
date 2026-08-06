@@ -2,7 +2,7 @@
   "version": 2,
   "buildCommand": "pnpm --filter=@dshit/web build",
   "outputDirectory": "apps/web/.next",
-  "installCommand": "pnpm install",
+  "installCommand": "pnpm install --registry https://registry.npmjs.org",
   "env": {
     "NODE_ENV": "production"
   }
