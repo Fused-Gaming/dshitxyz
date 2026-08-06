@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "installCommand": "corepack enable pnpm && pnpm install --fix-lockfile",
+  "installCommand": "corepack enable pnpm && pnpm install",
   "buildCommand": "next build",
   "outputDirectory": ".next",
   "env": {
