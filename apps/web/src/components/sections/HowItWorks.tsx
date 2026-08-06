@@ -29,7 +29,7 @@ const steps = [
   },
   {
     label: 'Deliver',
-    description: 'It's delivered to their wallet on-chain.',
+    description: "It's delivered to their wallet on-chain.",
   },
   {
     label: 'Receipt',

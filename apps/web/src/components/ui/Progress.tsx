@@ -44,7 +44,7 @@ export function Progress({
   );
 }
 
-interface StepperStep {
+export interface StepperStep {
   label: string;
   description?: string;
 }
