@@ -68,11 +68,5 @@
         }
       ]
     }
-  ],
-  "rewrites": [
-    {
-      "source": "/:path((?!_next/|api/|static/|manifest\\.json).)*",
-      "destination": "/index.html"
-    }
   ]
 }
