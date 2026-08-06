@@ -1,7 +1,7 @@
 {
   "version": 2,
   "installCommand": "pnpm install",
-  "buildCommand": "pnpm --filter=@dshit/web build",
+  "buildCommand": "pnpm install --no-frozen-lockfile && cd apps/web && pnpm build",
   "env": {
     "NODE_ENV": "production"
   },
