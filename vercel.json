@@ -1,7 +1,7 @@
 {
   "version": 2,
   "installCommand": "pnpm install",
-  "buildCommand": "pnpm run pre-build && pnpm --filter @dshit/web build",
+  "buildCommand": "pnpm --filter @dshit/web build",
   "outputDirectory": "apps/web/.next",
   "env": {
     "NODE_ENV": "production"
