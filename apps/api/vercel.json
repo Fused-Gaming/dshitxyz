@@ -1,0 +1,4 @@
+{
+  "version": 2,
+  "buildCommand": "echo 'API deployment skipped - use .vercelignore to prevent deployment'"
+}
