@@ -11,7 +11,7 @@ function isAdmin(userId: number, adminId: number): boolean {
 /**
  * Handle /stats command (admin only)
  */
-export async function handleStats(adminId: number) {
+export function handleStats(adminId: number) {
   return async (ctx: any): Promise<void> => {
     if (!isAdmin(ctx.from.id, adminId)) {
       await ctx.reply('❌ You do not have permission to use this command.');
@@ -52,7 +52,7 @@ export async function handleStats(adminId: number) {
 /**
  * Handle /users command (admin only)
  */
-export async function handleUsers(adminId: number) {
+export function handleUsers(adminId: number) {
   return async (ctx: any): Promise<void> => {
     if (!isAdmin(ctx.from.id, adminId)) {
       await ctx.reply('❌ You do not have permission to use this command.');
@@ -86,7 +86,7 @@ export async function handleUsers(adminId: number) {
 /**
  * Handle /broadcast command (admin only)
  */
-export async function handleBroadcast(bot: Telegraf, adminId: number) {
+export function handleBroadcast(bot: Telegraf, adminId: number) {
   return async (ctx: any): Promise<void> => {
     if (!isAdmin(ctx.from.id, adminId)) {
       await ctx.reply('❌ You do not have permission to use this command.');

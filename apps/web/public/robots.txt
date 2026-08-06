@@ -1,0 +1,42 @@
+# robots.txt for dshit.xyz
+# Allow general indexing of public pages
+
+User-agent: *
+Allow: /
+
+# Disallow private and sensitive routes
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /auth/login
+Disallow: /auth/register
+Disallow: /auth/callback
+Disallow: /dashboard/
+Disallow: /settings/
+Disallow: /account/
+Disallow: /.env
+Disallow: /.env.local
+Disallow: /.env.production
+Disallow: /config/
+
+# Sitemap location
+Sitemap: https://dshit.xyz/sitemap.xml
+
+# Crawl delay to prevent overload
+Crawl-delay: 1
+Request-rate: 1/1s
+
+# Block malicious bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+User-agent: ProwebWalker
+User-agent: DomainCrawler
+Disallow: /

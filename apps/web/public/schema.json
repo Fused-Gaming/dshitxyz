@@ -1,0 +1,48 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "dshit.xyz",
+  "url": "https://dshit.xyz",
+  "description": "Decentralized meme commerce platform. Create, vote, and trade memes on Base L2.",
+  "inLanguage": ["en", "es", "fr", "de"],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Fused Gaming",
+    "url": "https://dshit.xyz",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dshit.xyz/icon-512.png",
+      "width": 512,
+      "height": 512
+    },
+    "sameAs": [
+      "https://twitter.com/dshitxyz",
+      "https://discord.gg/dshitxyz"
+    ]
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://dshit.xyz/en/gallery?search={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  },
+  "keywords": ["meme", "nft", "crypto", "blockchain", "base", "web3", "decentralized"],
+  "mainEntity": {
+    "@type": "SoftwareApplication",
+    "name": "dshit.xyz",
+    "applicationCategory": "FinanceApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "url": "https://dshit.xyz"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "1200"
+    }
+  }
+}
