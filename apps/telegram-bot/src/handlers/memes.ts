@@ -146,7 +146,7 @@ export function memsHandler(bot: Telegraf): void {
 
   // Message handlers
   bot.on('photo', handleMemeImage);
-  bot.on('text', async (ctx) => {
+  bot.on('text', async (ctx: any) => {
     if (ctx.session?.waitingForCaption) {
       await handleMemeCaption(ctx);
     }

@@ -44,9 +44,10 @@ async function startBot(): Promise<void> {
     const bot = new Telegraf(config.token);
 
     // Error handling
-    bot.catch((err, ctx) => {
+    bot.catch((err: unknown, ctx) => {
+      const errorMessage = err instanceof Error ? err.message : String(err);
       logger.error('Bot error occurred', {
-        error: err.message,
+        error: errorMessage,
         userId: ctx?.from?.id,
         chatId: ctx?.chat?.id,
       });
