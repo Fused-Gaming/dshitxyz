@@ -1,6 +1,7 @@
 {
   "version": 2,
   "installCommand": "pnpm install",
+  "buildCommand": "pnpm --filter @dshit/web... build",
   "env": {
     "NODE_ENV": "production"
   },
