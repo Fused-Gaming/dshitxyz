@@ -42,3 +42,7 @@ npm-debug.log*
 
 # Clean install tracking
 .package-hash
+
+# Build caches
+.claude-flow/
+*.tsbuildinfo
