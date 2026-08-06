@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "pnpm run pre-build && pnpm --filter @dshit/web build",
+  "buildCommand": "pnpm --filter @dshit/web build",
   "installCommand": "pnpm install",
   "builds": [
     {
