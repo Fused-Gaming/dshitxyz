@@ -4,6 +4,8 @@ import { Providers } from '@/providers';
 import { notFound } from 'next/navigation';
 import { locales } from '@/i18n/config';
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: 'dshit.xyz | Decentralized Postal Service',
   description:

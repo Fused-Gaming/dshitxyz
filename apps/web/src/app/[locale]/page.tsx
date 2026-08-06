@@ -1,5 +1,7 @@
-import { Hero, HowItWorks, FeaturedCollections, FAQ } from '@/components/sections';
+import { Hero, HowItWorks, FeaturedCollections } from '@/components/sections';
 import { Footer } from '@/components/layout/Footer';
+
+export const dynamic = 'force-dynamic';
 
 export default function Home() {
   return (
@@ -7,7 +9,7 @@ export default function Home() {
       <Hero />
       <HowItWorks />
       <FeaturedCollections />
-      <FAQ />
+      {/* <FAQ /> - TODO: Debug useState issue */}
       <Footer />
     </>
   );
