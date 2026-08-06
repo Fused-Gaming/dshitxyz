@@ -1,6 +1,4 @@
 {
   "version": 2,
-  "buildCommand": "exit 1",
-  "outputDirectory": "dist",
-  "public": false
+  "buildCommand": "exit 1"
 }
