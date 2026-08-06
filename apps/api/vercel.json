@@ -1,5 +1,0 @@
-{
-  "version": 2,
-  "buildCommand": "echo 'API deployment via Vercel not supported. Deploy to a different platform.'",
-  "outputDirectory": "dist"
-}
