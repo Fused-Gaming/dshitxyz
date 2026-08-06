@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "buildCommand": "cd apps/web && npm run build",
+  "buildCommand": "yarn build",
   "outputDirectory": "apps/web/.next",
-  "installCommand": "npm install",
+  "installCommand": "yarn install --frozen-lockfile",
   "env": {
     "NODE_ENV": "production"
   }
