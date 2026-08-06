@@ -1,7 +1,7 @@
 {
   "version": 2,
   "installCommand": "pnpm install",
-  "buildCommand": "pnpm install --no-frozen-lockfile && cd apps/web && pnpm build",
+  "buildCommand": "pnpm -C apps/web build",
   "env": {
     "NODE_ENV": "production"
   },
