@@ -1,9 +1,4 @@
 {
   "version": 2,
-  "projects": [
-    {
-      "name": "dshitxyz",
-      "rootDirectory": "apps/web"
-    }
-  ]
+  "rootDirectory": "apps/web"
 }
