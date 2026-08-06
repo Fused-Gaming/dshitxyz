@@ -5,40 +5,40 @@ import { notFound } from 'next/navigation';
 import { locales } from '@/i18n/config';
 
 export const metadata: Metadata = {
-  title: 'dshit.xyz - Meme Commerce & Community',
+  title: 'dshit.xyz | Decentralized Postal Service',
   description:
-    'Decentralized meme commerce platform. Create, vote, and trade memes on Base L2.',
+    'The world\'s first decentralized NFT postal service. Mail Digital Turds to any blockchain wallet on Monad.',
   manifest: '/manifest.json',
   keywords: [
-    'meme',
-    'defi',
-    'cryptocurrency',
-    'base',
+    'nft',
+    'postal',
+    'monad',
+    'crypto',
     'web3',
-    'dshit',
-    'community',
+    'blockchain',
+    'mail',
   ],
   authors: [{ name: 'dshit.xyz' }],
   creator: 'dshit.xyz',
-  metadataBase: new URL('https://dshitxyz.vercel.app'),
+  metadataBase: new URL('https://dshit.xyz'),
   openGraph: {
     title: 'dshit.xyz',
-    description: 'Decentralized meme commerce platform',
-    url: 'https://dshitxyz.vercel.app',
+    description: 'The world\'s first decentralized NFT postal service',
+    url: 'https://dshit.xyz',
     type: 'website',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'dshit.xyz',
+        alt: 'dshit.xyz - Postal Service',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'dshit.xyz',
-    description: 'Decentralized meme commerce platform',
+    description: 'Decentralized NFT postal service on Monad',
   },
   appleWebApp: {
     capable: true,
@@ -52,7 +52,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: '#F4D03F',
+  themeColor: '#09090B',
 };
 
 export function generateStaticParams() {
@@ -75,7 +75,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html lang={locale}>
       <head>
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#F4D03F" />
+        <meta name="theme-color" content="#09090B" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
