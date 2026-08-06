@@ -3,8 +3,6 @@ import { InstallPrompt } from '@/components/InstallPrompt';
 import { Providers } from '@/providers';
 import { notFound } from 'next/navigation';
 import { locales } from '@/i18n/config';
-import { IntlClientProvider } from 'next-intl';
-import config from '@/i18n/config';
 
 export const metadata: Metadata = {
   title: 'dshit.xyz - Meme Commerce & Community',
@@ -73,8 +71,6 @@ export default async function LocaleLayout({ children, params }: Props) {
     notFound();
   }
 
-  const messages = (await import(`@/i18n/locales/${locale}.json`)).default;
-
   return (
     <html lang={locale}>
       <head>
@@ -87,11 +83,9 @@ export default async function LocaleLayout({ children, params }: Props) {
         <link rel="apple-touch-icon" href="/icon-192.png" />
       </head>
       <body>
-        <IntlClientProvider locale={locale} messages={messages}>
-          <Providers>{children}</Providers>
-          <InstallPrompt />
-          <ServiceWorkerRegistration />
-        </IntlClientProvider>
+        <Providers>{children}</Providers>
+        <InstallPrompt />
+        <ServiceWorkerRegistration />
       </body>
     </html>
   );
