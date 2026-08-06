@@ -2,7 +2,7 @@
   "version": 2,
   "buildCommand": "pnpm --filter=@dshit/web build",
   "outputDirectory": "apps/web/.next",
-  "installCommand": "corepack enable pnpm && pnpm install --no-frozen-lockfile",
+  "installCommand": "pnpm install",
   "env": {
     "NODE_ENV": "production"
   }
