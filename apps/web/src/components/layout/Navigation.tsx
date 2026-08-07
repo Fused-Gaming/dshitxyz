@@ -11,9 +11,9 @@ interface NavLink {
 
 const navLinks: NavLink[] = [
   { label: 'Home', href: '/' },
-  { label: 'Collections', href: '/collections' },
-  { label: 'Mailbox', href: '/mailbox' },
   { label: 'Marketplace', href: '/marketplace' },
+  { label: 'Mailbox', href: '/mailbox' },
+  { label: 'Collections', href: '/collections' },
   { label: 'DAO', href: '/dao' },
   { label: 'Docs', href: '/docs' },
 ];
@@ -49,7 +49,13 @@ export function Navigation() {
           </div>
 
           {/* Right side actions */}
-          <div className="flex items-center gap-md">
+          <div className="hidden sm:flex items-center gap-md">
+            <Link
+              href="/profile"
+              className="text-body text-text-secondary hover:text-text-primary transition-colors duration-quick"
+            >
+              Profile
+            </Link>
             <Button variant="primary" size="sm">
               Connect Wallet
             </Button>
