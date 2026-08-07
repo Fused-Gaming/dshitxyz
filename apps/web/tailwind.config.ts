@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import { designTokens } from '@dshit/design-tokens';
 
 const config: Config = {
   content: [
@@ -8,6 +9,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'sm': designTokens.breakpoints.sm,
+        'md': designTokens.breakpoints.md,
+        'lg': designTokens.breakpoints.lg,
+        'xl': designTokens.breakpoints.xl,
+        '2xl': designTokens.breakpoints['2xl'],
+      },
       colors: {
         // Background
         'bg-primary': '#09090B',
@@ -56,11 +64,11 @@ const config: Config = {
       spacing: {
         'xs': '4px',
         'sm': '8px',
-        'md': '12px',
-        'lg': '16px',
-        'xl': '24px',
-        '2xl': '32px',
-        '3xl': '48px',
+        'md': '16px',
+        'lg': '24px',
+        'xl': '32px',
+        '2xl': '48px',
+        '3xl': '64px',
         '4xl': '64px',
         '5xl': '96px',
       },
