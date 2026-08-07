@@ -1,0 +1,21 @@
+{
+  "name": "@dshit/nft-generative-art",
+  "version": "1.0.0",
+  "description": "NFT generative art engine for dshit.xyz meme creation",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "canvas": "^3.2.3",
+    "sharp": "^0.33.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.3"
+  }
+}

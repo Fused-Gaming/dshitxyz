@@ -17,6 +17,78 @@
         "CLAUDE_FLOW_MEMORY_BACKEND": "hybrid"
       },
       "autoStart": false
+    },
+    "h4shed-mcp-core": {
+      "command": "node",
+      "args": ["packages/h4shed-mcp-core/dist/index.js"],
+      "env": {
+        "H4SHED_ENVIRONMENT": "dev",
+        "H4SHED_LOG_LEVEL": "info"
+      },
+      "autoStart": false
+    },
+    "h4shed-syncpulse-hub": {
+      "command": "node",
+      "args": ["packages/h4shed-syncpulse-hub/dist/server.js"],
+      "env": {
+        "SYNCPULSE_PORT": "3000",
+        "SYNCPULSE_ENVIRONMENT": "dev",
+        "SYNCPULSE_MAX_CONCURRENT_JOBS": "10",
+        "SYNCPULSE_RETENTION_DAYS": "7"
+      },
+      "autoStart": false
+    },
+    "h4shed-syncpulse-skill": {
+      "command": "node",
+      "args": ["packages/h4shed-syncpulse-skill/dist/orchestrator.js"],
+      "env": {
+        "SKILL_LOG_LEVEL": "info",
+        "SKILL_ENVIRONMENT": "dev"
+      },
+      "autoStart": false
+    }
+  },
+  "h4shed": {
+    "environments": {
+      "dev": {
+        "apiUrl": "http://localhost:3001",
+        "webUrl": "http://localhost:3000",
+        "parallelWorkers": 4,
+        "retries": 0,
+        "timeout": 30000
+      },
+      "staging": {
+        "apiUrl": "https://staging-api.dshit.xyz",
+        "webUrl": "https://staging.dshit.xyz",
+        "parallelWorkers": 2,
+        "retries": 1,
+        "timeout": 45000
+      },
+      "prod": {
+        "apiUrl": "https://api.dshit.xyz",
+        "webUrl": "https://dshit.xyz",
+        "parallelWorkers": 1,
+        "retries": 2,
+        "timeout": 60000,
+        "skipTests": ["destructive", "heavy-load"]
+      }
+    },
+    "swarm": {
+      "topology": "hierarchical-mesh",
+      "maxAgents": 10,
+      "heartbeatInterval": 5000,
+      "autoScaling": true
+    },
+    "testing": {
+      "suites": ["unit", "integration", "e2e", "contract"],
+      "parallelWorkers": 4,
+      "retryFailed": true,
+      "reportFormat": "json"
+    },
+    "deployment": {
+      "rollbackEnabled": true,
+      "healthCheckInterval": 5000,
+      "preDeploymentValidation": true
     }
   }
 }

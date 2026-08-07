@@ -1,0 +1,20 @@
+{
+  "name": "@dshit/h4shed-syncpulse-hub",
+  "version": "1.0.0",
+  "description": "H4SH SyncPulse Hub - Central coordination for testing and deployment across environments",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "dev": "tsc --watch",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "@dshit/h4shed-mcp-core": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

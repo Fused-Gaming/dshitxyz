@@ -22,6 +22,9 @@
       ],
       "@dshit/ui": [
         "../../packages/ui/src/index.ts"
+      ],
+      "@dshit/design-tokens": [
+        "../../packages/design-tokens/src/index.ts"
       ]
     },
     "incremental": true,

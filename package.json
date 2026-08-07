@@ -19,6 +19,11 @@
   "devDependencies": {
     "@playwright/test": "^1.48.0",
     "@tailwindcss/postcss": "^4.2.2",
+    "@types/node": "^20.0.0",
+    "@dshit/h4shed-mcp-core": "workspace:*",
+    "@dshit/h4shed-mcp-cli": "workspace:*",
+    "@dshit/h4shed-syncpulse-hub": "workspace:*",
+    "@dshit/h4shed-syncpulse-skill": "workspace:*",
     "autoprefixer": "^10.4.27",
     "next": "^14.0.0",
     "postcss": "^8.5.8",
